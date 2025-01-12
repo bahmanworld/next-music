@@ -1,8 +1,6 @@
 import { createReadStream, statSync } from "fs";
 import { NextRequest, NextResponse } from "next/server";
 
-// export const runtime = "edge";
-
 const handler = async (req: NextRequest) => {
   const music = "music.mp3";
   const stat = statSync(music);
